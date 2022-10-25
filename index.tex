@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Enlai Li} \\ \vspace{1pt}
+    \small 514-916-9978 $|$ \href{mailto:enlai.li@mail.mcgill.ca}{\underline{enlai.li@mail.mcgill.ca}} $|$ 
+    \href{https://github.com/eli0009}{\underline{github.com/eli0009}} $|$
+    \href{https://www.linkedin.com/in/enlai-li}{\underline{linkedin.com/in/enlai-li}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McGill University}{Montreal, QC, Canada}
+      {B.S. Software Engineering, Minor in Statistics}{Sep 2022 -- Jun 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IT Manager}{May 2020 -- Present}
+      {Quebec Inc. 93456390}{Montreal, QC, Canada}
+      \resumeItemListStart
+        \resumeItem{Maintain and improve the IT infrastructure for mission-critical daily business operations}
+        \resumeItem{Managed a budget of 15k+\$ for hardware and software purchase}
+        \resumeItem{Developed a Java program to automatically generate daily business reports by reading from multiple Access Database using SQL Queries, allowing employees to save 1 hour a day on accounting}
+        \resumeItem{Set up equipment for employee use, installed computer hardware (processors, storage, memory), Windows 10 operating systems, and office software (MS Office, Adobe Photoshop, PDF Reader, Microsoft Access Database), reducing downtime by 52\%}
+        \resumeItem{Designed an automated daily backup system hosted on a Debian LAN server in Bash and Python with Cron, SSH, and Rsync, which prevented 100\% of data loss on critical disk failure}
+        \resumeItem{Answer employee inquiries regarding computer software or hardware operations to resolve problems with a success rate of 97\%}
+        \resumeItem{Trained employees on software and hardware usage, which reduced the amount of tech support requests by 31\%}
+        \resumeItem{Diagnosed issues with broken hardware components and assisted with the replacement of specific parts}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {DevOps Developer}{Sep 2022 -- Present}
+      {CTF McGill}{Montreal, QC, Canada}
+      \resumeItemListStart
+      \resumeItem{Collaborated with a team of over 30 people to develop and host full-stack web applications on McGill's server to provide essential services to students such as the Online Printing Service or the SSMU Election System}
+      \resumeItem{Deployment of cloud services such as GitLab, NextCloud, RocketChat, Jenkins and Kubernetes for CI/CD}
+      \resumeItem{Set up and managed Docker containers, running Python and Javascript applications, for deployment into a Kubernetes cluster}
+      \resumeItem{Worked closely with McGill's IT to create applications that require internal information}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Project}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Iceshell} $|$ \emph{Python, Qt5, Bash, Git}}{May 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a cross-platform GUI program in Python and Qt5, which uses AI to losslessly upscale images}
+            \resumeItem{Version control (SCM) with Git and source code hosting with GitHub}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+% ---------Awards-------------------
+\section{Awards}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Certificate of Distinction in Computer Science Competitions} $|$ \emph{Python, Java}}{Jun 2022}
+        \resumeItemListStart
+        \resumeItem{Canadian Computing Contest: Top 25\% of participants}
+        \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\textbf{Ranked 7 out of 50 teams in Poly AI 24-hour Hackathon} $|$ \emph{Python, TensorFlow, Pandas, Numpy}}{Oct 2022}
+          \resumeItemListStart
+            \resumeItem{Worked with a team of 4 to create an AI model with 88\% accuracy in prediction}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Java, Bash, Javascript, SQL Query, HTML/CSS, R, PHP} \\
+     \textbf{Frameworks}{: React, Flask} \\
+     \textbf{Technologies}{: MySQL, SQLite, Nginx, SSH, Docker, Kubernetes, Jenkins, OpenVPN, Git} \\
+     \textbf{Office Softwares}{: MS Office, Adobe Photoshop} \\
+     \textbf{Operation Systems}{: Linux, Debian, Ubuntu, Windows 10} \\
+     \textbf{Libraries}{: Qt5, Selenium, TensorFlow, BeautifulSoup, Pandas, Numpy, Matplotlib} \\
+     \textbf{Languages (fluent)}{: English, French, Chinese }
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
