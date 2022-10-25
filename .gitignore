@@ -1,1 +1,4 @@
 legacy/
+*
+!index.pdf
+!index.html
